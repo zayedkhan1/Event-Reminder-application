@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect, useRef } from "react";
 import { 
   FaUserAlt, 
@@ -16,6 +14,9 @@ import ReminderModal from "./components/ReminderModal";
 import { getEventsFromStorage, saveEventsToStorage } from "./utils";
 import { FaUsers, FaCog, FaStar, FaLightbulb } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
+
+
+
 export default function App() {
   const [events, setEvents] = useState(() => getEventsFromStorage());
   const [editingEventId, setEditingEventId] = useState(null);
@@ -23,7 +24,7 @@ export default function App() {
   const [message, setMessage] = useState(null);
   const [reminderEvent, setReminderEvent] = useState(null);
   const notifiedEvents = useRef(new Set());
-
+//js features
   const features = [
   {
     icon: <FaBell className="text-xl" />,
